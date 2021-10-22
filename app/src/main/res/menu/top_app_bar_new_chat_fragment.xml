@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/searchNewChatFragment"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/addAccountNewChatFragment"
+        android:icon="@drawable/ic_add_white"
+        android:title="Open"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/sortContactNewChatFragment"
+        android:icon="@drawable/ic_sort"
+        android:title="Sort"
+        app:showAsAction="always" />
+</menu>

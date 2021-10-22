@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayoutAddContactFragment"
+        style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topAppBarAddContactFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:layout_scrollFlags="noScroll"
+            app:menu="@menu/menu_app_bar_add_contact_fragment"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="Add Contact"
+            app:titleTextColor="@color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayoutAddContactFragment">
+
+        <ImageView
+            android:id="@+id/imageViewLetterAddContactFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_for_image_view_in_header"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.065" />
+
+        <TextView
+            android:id="@+id/textViewLetterAddContactFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="Y"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewLetterAddContactFragment"
+            app:layout_constraintLeft_toLeftOf="@id/imageViewLetterAddContactFragment"
+            app:layout_constraintRight_toRightOf="@id/imageViewLetterAddContactFragment"
+            app:layout_constraintTop_toTopOf="@id/imageViewLetterAddContactFragment" />
+
+        <EditText
+            android:id="@+id/editTextFirstNameAddContactFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:hint="First name (required)"
+            android:inputType="text"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.075"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintLeft_toRightOf="@id/imageViewLetterAddContactFragment"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.02"
+            app:layout_constraintWidth_percent="0.65" />
+
+        <!--        <View-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:background="@color/transparent"-->
+        <!--            app:layout_constraintLeft_toLeftOf="@id/editTextFirstNameAddContactFragment"-->
+        <!--            app:layout_constraintRight_toRightOf="@id/editTextFirstNameAddContactFragment"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/editTextFirstNameAddContactFragment" />-->
+
+        <EditText
+            android:id="@+id/editTextLastNameAddContactFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:hint="Last name (optional)"
+            android:inputType="text"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.075"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintLeft_toRightOf="@id/imageViewLetterAddContactFragment"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.12"
+            app:layout_constraintWidth_percent="0.65" />
+
+        <!--        <View-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:background="@color/transparent"-->
+        <!--            app:layout_constraintLeft_toLeftOf="@id/editTextLastNameAddContactFragment"-->
+        <!--            app:layout_constraintRight_toRightOf="@id/editTextLastNameAddContactFragment"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/editTextLastNameAddContactFragment" />-->
+
+        <EditText
+            android:id="@+id/editTextCountryAddContactFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:clickable="false"
+            android:editable="false"
+            android:text="Uzbekistan"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextLastNameAddContactFragment"
+            app:layout_constraintVertical_bias="0.075"
+            app:layout_constraintWidth_percent="0.875" />
+
+        <!--        <View-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:background="@color/transparent"-->
+        <!--            app:layout_constraintLeft_toLeftOf="@id/editTextCountryAddContactFragment"-->
+        <!--            app:layout_constraintRight_toRightOf="@id/editTextCountryAddContactFragment"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/editTextCountryAddContactFragment" />-->
+
+        <EditText
+            android:id="@+id/editTextCountryCodeAddContactFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@color/black"
+            android:clickable="false"
+            android:editable="false"
+            android:text="+998"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.065"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextCountryAddContactFragment"
+            app:layout_constraintVertical_bias="0.02"
+            app:layout_constraintWidth_percent="0.15" />
+
+        <!--        <View-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:background="@color/transparent"-->
+        <!--            app:layout_constraintLeft_toLeftOf="@id/editTextCountryCodeAddContactFragment"-->
+        <!--            app:layout_constraintRight_toRightOf="@id/editTextCountryCodeAddContactFragment"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/editTextCountryCodeAddContactFragment" />-->
+
+        <EditText
+            android:id="@+id/editTextNumberAddContactFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:inputType="phone"
+            android:maxLength="9"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.065"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextCountryAddContactFragment"
+            app:layout_constraintVertical_bias="0.02"
+            app:layout_constraintWidth_percent="0.65" />
+
+        <!--        <View-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:background="@color/transparent"-->
+        <!--            app:layout_constraintLeft_toLeftOf="@id/editTextNumberAddContactFragment"-->
+        <!--            app:layout_constraintRight_toRightOf="@id/editTextNumberAddContactFragment"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/editTextNumberAddContactFragment" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

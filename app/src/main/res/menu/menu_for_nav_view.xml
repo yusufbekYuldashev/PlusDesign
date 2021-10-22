@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/chat_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/new_group"
+            android:icon="@drawable/ic_group"
+            android:title="New Group" />
+        <item
+            android:id="@+id/new_secret_chat"
+            android:icon="@drawable/ic_lock"
+            android:title="New Secret Chat" />
+        <item
+            android:id="@+id/new_channel"
+            android:icon="@drawable/ic_campaign"
+            android:title="New Channel" />
+    </group>
+    <group
+        android:id="@+id/settings_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/contacts"
+            android:icon="@drawable/ic_person"
+            android:title="Contacts" />
+
+        <item
+            android:id="@+id/folders"
+            android:icon="@drawable/ic_folder"
+            android:title="Folders" />
+        <item
+            android:id="@+id/people_nearby"
+            android:icon="@drawable/ic_location"
+            android:title="People nearby" />
+        <item
+            android:id="@+id/saved_messages"
+            android:icon="@drawable/ic_saved_msg"
+            android:title="Saved Messages" />
+        <item
+            android:id="@+id/archived_chats"
+            android:icon="@drawable/ic_archive"
+            android:title="Archived chats" />
+        <item
+            android:id="@+id/calls"
+            android:icon="@drawable/ic_phone"
+            android:title="Calls" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+    </group>
+    <group
+        android:id="@+id/settings_plus"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/plus_settings"
+            android:icon="@drawable/ic_add"
+            android:title="Plus Settings" />
+
+        <item
+            android:id="@+id/categories"
+            android:icon="@drawable/ic_folder_open"
+            android:title="Categories" />
+
+        <item
+            android:id="@+id/download_themes"
+            android:icon="@drawable/ic_palette"
+            android:title="Download themes" />
+
+        <item
+            android:id="@+id/theming"
+            android:icon="@drawable/ic_brush"
+            android:title="Theming" />
+
+        <item
+            android:id="@+id/support_group"
+            android:icon="@drawable/ic_groups"
+            android:title="Support group" />
+
+        <item
+            android:id="@+id/chats_counters"
+            android:icon="@drawable/ic_menu"
+            android:title="Chats Counters" />
+    </group>
+</menu>
